@@ -18,7 +18,7 @@ Building fast, scalable, and production-ready web applications. Currently a 3rd-
 
 - **Academic Standing:** 8.5 / 10 CGPA
 - **DSA Profile:** 500+ Problems Solved (LeetCode/GFG)
-- **Hackathons:** Participated in 7+ national-level hackathons
+- **Hackathons:** Participated in 7+ hackathons
 - **Availability:** Ready for Internship starting [Update Date]
 
 ---
@@ -29,14 +29,13 @@ Building fast, scalable, and production-ready web applications. Currently a 3rd-
 - A high-performance, glassmorphism-inspired portfolio built with vanilla technologies to showcase optimization and design skills.
 - Implemented responsive architecture and SEO-friendly meta tags.
 
-#### [Add Project Name Here]
-- Brief description of a project where you solved a real problem.
-- Highlight the impact (e.g., "Handled 100+ concurrent requests").
+#### [**Under Construction Projects**]
+
 
 ---
 
 ### 🎯 Objective
-I am a builder who loves solving complex architectural problems. I am targeting SDE roles at fast-moving companies like **Google, Microsoft, Amazon, and Razorpay**, where I can contribute to products used by millions of users.
+I am a builder who loves solving complex architectural problems. I am targeting SDE roles 
 
 ---
 
