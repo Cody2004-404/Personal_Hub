@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 // SYSTEM_ERROR</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --accent: #ff00ff;
+            --accent2: #00ff88;
+            --glow: 0 0 10px rgba(255, 0, 255, 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--bg);
+            color: #eee;
+            font-family: 'JetBrains Mono', monospace;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.1) 2px, rgba(0, 0, 0, 0.1) 4px);
+            z-index: 9999;
+        }
+
+        .container {
+            z-index: 2;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 8rem;
+            color: var(--accent);
+            text-shadow: var(--glow);
+            margin-bottom: 1rem;
+            animation: glitch 1s infinite;
+        }
+
+        .error-msg {
+            font-size: 1.2rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            color: var(--accent2);
+            margin-bottom: 2rem;
+        }
+
+        .desc {
+            max-width: 400px;
+            margin: 0 auto 2rem;
+            color: #888;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-flex;
+            padding: 1rem 2rem;
+            border: 1px solid var(--accent2);
+            color: var(--accent2);
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+            transition: all 0.3s;
+            clip-path: polygon(0 10px, 10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+        }
+
+        .btn:hover {
+            background: rgba(0, 255, 136, 0.1);
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+            transform: translateY(-2px);
+        }
+
+        @keyframes glitch {
+            0% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(-3px, 3px);
+            }
+
+            40% {
+                transform: translate(-3px, -3px);
+            }
+
+            60% {
+                transform: translate(3px, 3px);
+            }
+
+            80% {
+                transform: translate(3px, -3px);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p class="error-msg">SYSTEM_ERROR: FILE_NOT_FOUND</p>
+        <p class="desc">The sector you are trying to access has been corrupted or moved to another dimension.</p>
+        <a href="/" class="btn">_RETURN_TO_HOME</a>
+    </div>
+</body>
+
+</html>
